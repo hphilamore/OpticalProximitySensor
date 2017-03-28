@@ -2,7 +2,6 @@
 QRD1114_Proximity_Example.ino
 Example sketch for SparkFun's QRD1114 Reflectance Proximity Sensor
   (https://www.sparkfun.com/products/246)
-  (https://learn.sparkfun.com/tutorials/qrd1114-optical-detector-hookup-guide?_ga=1.57060067.834043405.1459523277)  
 Jim Lindblom @ SparkFun Electronics
 May 2, 2016
 
@@ -32,8 +31,7 @@ void loop()
   // Read in the ADC and convert it to a voltage:
   int proximityADC = analogRead(QRD1114_PIN);
   float proximityV = (float)proximityADC * 5.0 / 1023.0;
-  Serial.println(ADC);
-  //Serial.println(proximityV);
+  Serial.println(proximityV);
   delay(100);
 }
 
